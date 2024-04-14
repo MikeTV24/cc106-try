@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_con.css">
+    <link rel="stylesheet" href="style-2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Technical Shopping</title>
+    <link rel="icon" href="images/log.png">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/log.png" width="125px">
+            </div>
+            <nav>
+                <ul id ="MenuItems">
+                    <li><a href ="index_int.html">HOME</a></li>
+                    <li><a href ="products.html">PRODUCTS</a></li>
+                    <li><a href ="contact.html">CONTACT</a></li>    
+                    <li><a href ="file:///C:/Users/mclar/OneDrive/Documents/cc106/bootstrap-4-login-page-master/bootstrap-4-login-page-master/index.html">LOG IN</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" class="cartening"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+  <section class="location-1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61747.58550175766!2d120.95631624863282!3d14.69991550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d899095555%3A0x523cb309be95e9a6!2sQuezon%20City%20University!5e0!3m2!1sen!2sph!4v1711904154882!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>  
+
+  
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa fa-home"></i>
+        <span>
+          <h5>
+            Metro Manila National Highway
+          </h5>
+          <p>
+            Novaliches, Quezon City, Metro Manila
+          </p>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>
+            +65 012345678
+          </h5>
+          <p>
+            Monday to Saturday, 10AM to 6PM
+          </p>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-home"></i>
+        <span>
+          <h5>
+            novaliches@gmail.com
+          </h5>
+          <p>
+            Email us your question
+          </p>
+        </span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="">
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <input type="text" placeholder="Enter Your Subject" required>
+        <textarea rows="8" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>
+                    Download Our App
+                </h3>
+                <p>
+                    Download App for Android and ios mobile phone
+                </p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/log.png" alt="">
+                <p>
+                    Our Purpose is to Sustainably make the pleasure, and Benefits of Sports Accessible to the many.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>
+                    Useful Links
+                </h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>
+                    Useful Links
+                </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Copyright 2024
+        </p>
+    </div>
+</div>
+<!-----Menu Toggle------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
